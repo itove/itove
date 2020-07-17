@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class WController extends AbstractController
 {
     /**
-     * @Route("/w", name="w")
+     * @Route("/{w}", name="w", requirements={"w"="w|W"})
      */
     public function index()
     {
